@@ -16,33 +16,33 @@ EMP_SALARY decimal(10,2)*/
 UPDATE ## SET ## WHERE ##;*/ 
 
 
-/* ALTER TABLE albums
-RENAME COLUMN Title to Title_test */
+ALTER TABLE albums
+RENAME COLUMN Title to Title_test
 
-/* UPDATE tracks
+UPDATE tracks
 SET composer = 'AD/BC'
-WHERE composer = 'AC/DC' */
+WHERE composer = 'AC/DC'
 
-/* CREATE TABLE  TEMP(
+REATE TABLE  TEMP(
 	AlbumId INTEGER PRIMARY KEY,
 	title NVARCHAR,
 	artistid INTEGER
-); */
+);
 
 --INSERT INTO TEMP
 --SELECT albumid, title_test, artistid
 --FROM albums
 
 
-/* UPDATE tracks
+UPDATE tracks
 SET bytes = bytes/100
 WHERE bytes NOT IN (
 SELECT bytes
 FROM tracks
 ORDER BY bytes DESC
-LIMIT 10) */
+LIMIT 10)
 
-/* UPDATE tracks
+UPDATE tracks
 SET unitprice = unitprice + 100
-WHERE genreid = 20 */
+WHERE genreid = 20
 
